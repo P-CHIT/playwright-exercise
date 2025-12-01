@@ -14,9 +14,15 @@ test.describe('Login Tests', () => {
     await expect(login.loginButton).toBeVisible();
   });
 
-  test('TC001&TC002: Login with valid credentials (customer1)', async ({ }) => {
+  test('TC001: Login with valid credentials (customer1)', async ({ }) => {
 
     await login.loginAs('customer1', 'password');
+    await login.expectLoginSuccess();
+  });
+
+  test('TC002: Login with valid credentials (customer2)', async ({ }) => {
+
+    await login.loginAs('customer2', 'password');
     await login.expectLoginSuccess();
   });
 
