@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
-import { LoginPage } from './pages/login.page';
-import { StorePage } from './pages/store.page';
-import { CartPage } from './pages/cart.page';
+import { LoginPage } from '../pages/login.page';
+import { StorePage } from '../pages/store.page';
+import { CartPage } from '../pages/cart.page';
 
 test.describe('Cart Management Tests', () => {
   let login: LoginPage;

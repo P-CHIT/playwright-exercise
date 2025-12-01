@@ -1,9 +1,9 @@
 import { test } from '@playwright/test';
-import { LoginPage } from './pages/login.page';
-import { StorePage } from './pages/store.page';
-import { CartPage } from './pages/cart.page';
-import { CheckoutPage } from './pages/checkout.page';
-import { CompleteOrderPage } from './pages/complete-order.page';
+import { LoginPage } from '../pages/login.page';
+import { StorePage } from '../pages/store.page';
+import { CartPage } from '../pages/cart.page';
+import { CheckoutPage } from '../pages/checkout.page';
+import { CompleteOrderPage } from '../pages/complete-order.page';
 
 test.describe('Checkout Scenarios', () => {
   let login: LoginPage;
